@@ -1,4 +1,4 @@
-const Clickbutton = document.querySelectorAll('.button')
+const Clickbutton = document.querySelectorAll(".button")
 const tbody = document.querySelector('.tbody')
 let carrito = []
 
@@ -42,7 +42,7 @@ function addItemCarrito(newItem){
 
 
 function renderCarrito(){
-  tbody.innerHTML = ''
+  tbody.innerHTML = ""
   carrito.map(item => {
     const tr = document.createElement('tr')
     tr.classList.add('ItemCarrito')
