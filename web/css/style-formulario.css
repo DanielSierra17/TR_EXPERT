@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
 * {
   font-family: 'Nunito', sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-   box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
   outline: none;
   border: none;
@@ -52,7 +53,7 @@ section {
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   height: .1rem;
   width: 100%;
   background: #aaa;
@@ -79,11 +80,11 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 0 9%;
   z-index: 10000;
   background: #000;
@@ -119,13 +120,13 @@ section {
 
 
 .btn-outline-dark {
-  border: 2px solid ;
+  border: 2px solid;
 }
 
 
 .form-control {
   background-color: #fff;
-  border: 2px solid ;
+  border: 2px solid;
   border-radius: .2rem;
   padding: 1.5rem 1rem;
 }
@@ -133,25 +134,26 @@ section {
 .testiomonial {
   bottom: 8px
 }
-#ti{
+
+#ti {
   display: flex;
   font-size: 70px;
   color: red;
   font-family: Marcellus;
   justify-content: center;
-          align-content: center;
-          align-items: center;
+  align-content: center;
+  align-items: center;
 }
 
 
-#input-style{  
-  color:#fff;
-  border-width:thin;
-  border-style:solid;
-  border-color:#fff;
-  }
+#input-style {
+  color: #fff;
+  border-width: thin;
+  border-style: solid;
+  border-color: #fff;
+}
 
-.texto-input{
+.texto-input {
   color: #000;
   font-size: 150%;
 }
@@ -170,12 +172,13 @@ section {
 
 .about .image {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 42rem;
-          flex: 1 1 42rem;
+  -ms-flex: 1 1 42rem;
+  flex: 1 1 42rem;
   position: relative;
 }
 
-.about .image::before, .about .image::after {
+.about .image::before,
+.about .image::after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -201,8 +204,8 @@ section {
 
 .about .content {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 42rem;
-          flex: 1 1 42rem;
+  -ms-flex: 1 1 42rem;
+  flex: 1 1 42rem;
 }
 
 
@@ -210,7 +213,7 @@ section {
   padding: 30px 20px;
 }
 
-.form-control {    
+.form-control {
   margin-bottom: 7px;
   padding-bottom: 20px;
   position: relative;
@@ -219,7 +222,7 @@ section {
 .form-control label {
   display: inline-block;
   margin-bottom: 7px;
-  font:weight 200px
+  font: weight 200px
 }
 
 .form-control input {
@@ -230,7 +233,7 @@ section {
   font-family: inherit;
   font-size: 16px;
   padding: 12px;
-  width: 100%;    
+  width: 100%;
 }
 
 .form-control select {
@@ -241,9 +244,11 @@ section {
   font-family: inherit;
   font-size: 16px;
   padding: 12px;
-  width: 100%;    
+  width: 100%;
 }
-.form-control, input:focus {
+
+.form-control,
+input:focus {
   outline: none;
 }
 
@@ -251,6 +256,7 @@ section {
   border: 0.1px solid;
   border-color: hsl(120, 100%, 52%);
 }
+
 .form-control.falla input {
   border: 0.1px solid;
   border-color: #fe5f55;
@@ -265,6 +271,7 @@ section {
   padding: 10px;
   font-size: 18px;
 }
+
 .form-control p {
   visibility: hidden;
   position: absolute;
@@ -275,8 +282,9 @@ section {
 
 .form-control.falla p {
   visibility: visible;
-  color:#e74c3c;
+  color: #e74c3c;
 }
+
 table {
   background-color: white;
   text-align: center;
@@ -286,7 +294,6 @@ table {
   margin-left: 25%;
   margin-bottom: 8px;
   margin-right: 8px;
-  
 }
 
 th,
@@ -310,6 +317,7 @@ tr:hover td {
   background-color: #121231;
   color: white;
 }
+
 #actualizar {
   background-color: rgb(251, 255, 0);
   font-size: 1em;
@@ -317,8 +325,9 @@ tr:hover td {
   width: auto;
   padding: 5px;
 }
+
 #eliminar {
-  background-color: rgb(255, 0, 0); 
+  background-color: rgb(255, 0, 0);
   font-size: 1em;
   height: auto;
   width: auto;
@@ -330,4 +339,3 @@ tr:hover td {
     font-size: 50%;
   }
 }
-/*# sourceMappingURL=style.css.map */
