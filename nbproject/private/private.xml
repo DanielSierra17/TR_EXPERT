@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/edwar/Desktop/GYMSOFT_CRUD/gymsoft/src/java/ModeloVO/EntrenadorVO.java</file>
-            <file>file:/C:/Users/edwar/Desktop/GYMSOFT_CRUD/gymsoft/src/java/ModeloDAO/ClienteDAO.java</file>
-            <file>file:/C:/Users/edwar/Desktop/GYMSOFT_CRUD/gymsoft/src/java/ModeloDAO/UsuarioDAO.java</file>
+            <file>file:/C:/Users/marbe/Documents/NetBeansProjects/gymsoft/web/login.jsp</file>
+            <file>file:/C:/Users/marbe/Documents/NetBeansProjects/gymsoft/web/formulario-validaciones.jsp</file>
+            <file>file:/C:/Users/marbe/Documents/NetBeansProjects/gymsoft/web/js/formulario-validaciones.js</file>
+            <file>file:/C:/Users/marbe/Documents/NetBeansProjects/gymsoft/src/java/Controlador/ControladorU.java</file>
         </group>
     </open-files>
 </project-private>

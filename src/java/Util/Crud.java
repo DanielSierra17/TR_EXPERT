@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ConexionBD;
+package Util;
 
 /**
  *
@@ -16,5 +16,7 @@ public interface Crud {
     public abstract boolean actualizarRegistro();
 
     public abstract boolean eliminarRegistro();
+    
+
 
 }
