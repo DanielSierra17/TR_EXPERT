@@ -55,7 +55,6 @@ public class ClienteDAO extends ConexionBd implements Crud{
             puente = conexion.prepareStatement(sql);
             puente.setString(1, idCliente);
             puente.setString(2, numDoc);
-         ;
 
             puente.executeUpdate();
             operacion = true;

@@ -1,20 +1,7 @@
-/*
-	Color fondo: #632432;
-	Color header: 246355;
-	Color borde: 0F362D;
-	Color iluminado: 369681;
-*/
 body {
   background-color: #000;
   font-family: Arial;
 }
-
-/*html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
-    overflow-x: hidden;
-  }*/
 
 html::-webkit-scrollbar {
   width: 1rem;
@@ -140,11 +127,7 @@ table {
   text-align: center;
   width: 50%;
   border-radius: 5px;
-  margin-top: 150px;
-  margin-left: 8px;
-  margin-bottom: 8px;
-  margin-right: 8px;
-  
+  margin: 15%;
 }
 
 th,
@@ -168,6 +151,7 @@ tr:hover td {
   background-color: #121231;
   color: white;
 }
+
 #actualizar {
   background-color: rgb(251, 255, 0);
   font-size: 1em;
@@ -175,8 +159,9 @@ tr:hover td {
   width: auto;
   padding: 5px;
 }
+
 #eliminar {
-  background-color: rgb(255, 0, 0); 
+  background-color: rgb(255, 0, 0);
   font-size: 1em;
   height: auto;
   width: auto;
