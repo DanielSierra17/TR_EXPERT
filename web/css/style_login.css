@@ -288,8 +288,6 @@ select input {
   transform: translateX(800px);
 }
 
-/* ANIMATION */
-
 .container.sign-up-mode:before {
   transform: translate(100%, -50%);
   right: 52%;
@@ -542,7 +540,7 @@ main {
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  transition: .1s ease all;
+  transition: 0.1s ease all;
 }
 
 
@@ -560,8 +558,6 @@ main {
   display: block;
 }
 
-
-/* ----- -----  Estilos para Validacion ----- ----- */
 .formulario__grupo-correcto .formulario__validacion-estado {
   color: #1ed12d;
   opacity: 1;
@@ -580,8 +576,6 @@ main {
   border: 3px solid #bb2929;
 }
 
-
-/* ----- -----  Mediaqueries ----- ----- */
 @media screen and (max-width: 800px) {
   .formulario {
     grid-template-columns: 1fr;

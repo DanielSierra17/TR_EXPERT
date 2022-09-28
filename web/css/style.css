@@ -10,8 +10,8 @@
   outline: none;
   border: none;
   text-transform: capitalize;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 html {
@@ -54,7 +54,7 @@ section {
   left: 0;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  height: .1rem;
+  height: 0.1rem;
   width: 100%;
   background: #aaa;
   z-index: -1;
