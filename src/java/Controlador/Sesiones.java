@@ -17,7 +17,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author DANIEL SIERRA
  */
-@WebServlet(name = "Sesiones", urlPatterns = {"/Sesiones"})
+@WebServlet(name = "Sesiones", urlPatterns = { "/Sesiones" })
 public class Sesiones extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

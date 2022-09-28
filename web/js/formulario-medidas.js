@@ -1,5 +1,5 @@
-const tabs = document.querySelectorAll('[data-tab-target]')
-const tabContents = document.querySelectorAll('[data-tab-content]')
+const tabs = document.querySelectorAll("[data-tab-target]")
+const tabContents = document.querySelectorAll("[data-tab-content]")
 
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
@@ -15,7 +15,6 @@ tabs.forEach((tab) => {
   })
 })
 
-//Arrastrar y soltar
 let arreglo = ["", "", ""];
 
 function allowDrop(ev) {

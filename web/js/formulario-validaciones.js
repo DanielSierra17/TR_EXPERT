@@ -119,7 +119,7 @@ formulario.addEventListener('submit', (e) => {
         }, 5000);
 
         document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-            icono.classList.remove('formulario__grupo-correcto');
+            icono.classList.remove("formulario__grupo-correcto");
         });
     } else {
         document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');

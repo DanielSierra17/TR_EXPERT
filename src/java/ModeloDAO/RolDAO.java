@@ -29,7 +29,8 @@ public class RolDAO extends ConexionBd implements Crud {
     private boolean operacion = false;
     private String sql;
 
-    private String idRol = "", rolTipo = "";
+    private String idRol = "";
+    private String rolTipo = "";
 
     public RolDAO() {
     }

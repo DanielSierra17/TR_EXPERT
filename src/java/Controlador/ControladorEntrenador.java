@@ -42,7 +42,7 @@ public class ControladorEntrenador extends HttpServlet {
         
          switch (opcion) {
 
-            case 1: //Agregar registro
+            case 1:
                     if (entDAO.agregarRegistro()) {
 
                     request.setAttribute("mensajeExito", "USUARIO REGISTRADO EXITOSAMENTE");

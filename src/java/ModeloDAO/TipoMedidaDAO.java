@@ -29,7 +29,9 @@ public class TipoMedidaDAO extends ConexionBd implements Crud {
     private boolean operacion = false;
     private String sql;
 
-    private String codigo = "", nombreParte = "", categoria = "";
+    private String codigo = "";
+    private String nombreParte = ""; 
+    private String categoria = "";
 
     public TipoMedidaDAO() {
     }

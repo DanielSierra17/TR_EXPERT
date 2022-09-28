@@ -16,19 +16,19 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author edwar
+ * @author
  */
-@WebServlet(name = "ControladorTipoEjercicio", urlPatterns = {"/Tejercicio"})
+@WebServlet(name = "ControladorTipoEjercicio", urlPatterns = { "/Tejercicio" })
 public class ControladorTipoEjercicio extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
      *
-     * @param request servlet request
+     * @param request  servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
+     * @throws IOException      if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -41,52 +41,49 @@ public class ControladorTipoEjercicio extends HttpServlet {
         String descanso = request.getParameter("txtDescanso");
         String peso = request.getParameter("txtPeso");
         int opcion = Integer.parseInt(request.getParameter("opcion"));
-        
+
         TipoEjercicioVO tejVO = new TipoEjercicioVO(idTE, nombreE, desc, series, repeticiones, descanso, peso);
-        
+
         TipoEjercicioDAO tejDAO = new TipoEjercicioDAO(tejVO);
-        
+
         switch (opcion) {
 
-            case 1: //Agregar registro
+            case 1:
                 if (tejDAO.agregarRegistro()) {
                     request.setAttribute("mensajeExito", "TIPO DE EJERCICIO REGISTRADO CON EXITO");
-                    
 
                 } else {
                     request.setAttribute("mensajeError", "ERROR AL REGISTRAR TIPO DE EJERCICIO");
-                    
+
                 }
                 request.getRequestDispatcher("tiposEjercicios.jsp").forward(request, response);
-                
+
                 break;
-                
+
             case 2:
                 tejVO = tejDAO.eliminarTipoEjercicio(idTE);
                 if (tejVO != null) {
-                    /*request.setAttribute("UsuarioSeleccionado", usuVO);*/
                     request.setAttribute("mensajeExito", "SE HA ELIMINADO El TIPO DEJERCICIO EXITOSAMENTE");
-                   
+
                 } else {
                     request.setAttribute("mensajeError", "EL TIPO DE EJERCICIO NO SE HA PODIDO ELIMINAR");
-                   
-                    
+
                 }
                 request.getRequestDispatcher("tiposEjercicios.jsp").forward(request, response);
                 break;
-                
+
             case 3:
                 tejVO = tejDAO.consultarTipoEjercicio(idTE);
                 if (tejVO != null) {
                     request.setAttribute("TESeleccion", tejVO);
                     request.getRequestDispatcher("actualizarTipoEjercicio.jsp").forward(request, response);
-               
+
                 } else {
                     request.setAttribute("mensajeError", "EL TIPO DE EJERCICIO NO SE ENCUENTRA REGISTRADO");
                     request.getRequestDispatcher("tiposEjercicio.jsp").forward(request, response);
                 }
                 break;
-                
+
             case 4:
                 if (tejDAO.actualizarRegistro()) {
                     request.setAttribute("mensajeExito", "EL TIPO DE EJERCICIO SE ACTUALIZO CORRECTAMENTE");
@@ -95,23 +92,21 @@ public class ControladorTipoEjercicio extends HttpServlet {
                     request.setAttribute("mensajeError", "EL TIPO DE EJERCICIO NO SE HA PODIDO ACTUALIZAR");
                     request.getRequestDispatcher("actualizarTipoEjercicio.jsp").forward(request, response);
                 }
-               
+
                 break;
-            
-                
-                
-                
+
         }
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the
+    // + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
      *
-     * @param request servlet request
+     * @param request  servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
+     * @throws IOException      if an I/O error occurs
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -122,10 +117,10 @@ public class ControladorTipoEjercicio extends HttpServlet {
     /**
      * Handles the HTTP <code>POST</code> method.
      *
-     * @param request servlet request
+     * @param request  servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
+     * @throws IOException      if an I/O error occurs
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

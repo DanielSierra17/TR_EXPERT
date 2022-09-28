@@ -27,7 +27,8 @@ public class ClienteDAO extends ConexionBd implements Crud{
     private boolean operacion = false;
     private String sql;
     
-     private String idCliente = "", numDoc = "";
+     private String idCliente = "";
+     private String numDoc = "";
 
     public ClienteDAO() {
         

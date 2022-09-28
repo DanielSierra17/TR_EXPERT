@@ -12,22 +12,26 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
 public class TipoEjercicioDAO extends ConexionBd implements Crud {
-    
-     private Connection conexion;
+
+    private Connection conexion;
     private PreparedStatement puente;
     private ResultSet mensajero;
 
     private boolean operacion = false;
     private String sql;
-    
-    private String idTE, nombreE, descripcionE, seriesE, repeticionesE, descansoE, pesoE;
-    
-    public TipoEjercicioDAO(){
+
+    private String idTE = ""; 
+    private String nombreE = ""; 
+    private String descripcionE = "";
+    private String seriesE = ""; 
+    private String repeticionesE = "";
+    private String descansoE = "";
+    private String pesoE = "";
+
+    public TipoEjercicioDAO() {
     }
-    
-    
+
     public TipoEjercicioDAO(TipoEjercicioVO tipoejercicioVO) {
         super();
         try {
@@ -43,10 +47,10 @@ public class TipoEjercicioDAO extends ConexionBd implements Crud {
             Logger.getLogger(TipoEjercicioDAO.class.getName()).log(Level.SEVERE, null, e);
         }
     }
-    
+
     @Override
-    public boolean agregarRegistro(){
-        
+    public boolean agregarRegistro() {
+
         try {
 
             sql = "INSERT INTO tipoejercicio (nombreEjercicio, descripcionEjercicio, series, repeticiones, descanso, peso) VALUES (?,?,?,?,?,?)";
@@ -71,11 +75,11 @@ public class TipoEjercicioDAO extends ConexionBd implements Crud {
         }
         return operacion;
     }
-    
-    @Override 
-    public boolean actualizarRegistro(){
-        
-       try {
+
+    @Override
+    public boolean actualizarRegistro() {
+
+        try {
 
             sql = "UPDATE tipoejercicio SET nombreEjercicio=?, descripcionEjercicio=? ,series=? , repeticiones=? , descanso=? , peso=?  WHERE idTipoEjercicio=?";
             puente = conexion.prepareStatement(sql);
@@ -100,15 +104,15 @@ public class TipoEjercicioDAO extends ConexionBd implements Crud {
         }
         return operacion;
     }
-    
-    @Override 
-    public boolean eliminarRegistro(){
+
+    @Override
+    public boolean eliminarRegistro() {
         return operacion;
     }
-    
+
     public ArrayList<TipoEjercicioVO> listar() {
 
-        ArrayList<TipoEjercicioVO> listaTipoEjercicio= new ArrayList<>();
+        ArrayList<TipoEjercicioVO> listaTipoEjercicio = new ArrayList<>();
         try {
             conexion = this.obtenerConexion();
             sql = "SELECT * FROM tipoEjercicio";
@@ -139,14 +143,13 @@ public class TipoEjercicioDAO extends ConexionBd implements Crud {
         }
         return listaTipoEjercicio;
     }
-    
-    
+
     public TipoEjercicioVO eliminarTipoEjercicio(String idTE) {
         TipoEjercicioVO tejVO = null;
         try {
             sql = "DELETE FROM tipoEjercicio where idTipoEjercicio = ?";
             puente = conexion.prepareStatement(sql);
-            puente.setString(1, idTE); 
+            puente.setString(1, idTE);
             puente.executeUpdate();
             operacion = true;
         } catch (SQLException e) {
@@ -160,7 +163,7 @@ public class TipoEjercicioDAO extends ConexionBd implements Crud {
         }
         return tejVO;
     }
-    
+
     public TipoEjercicioVO consultarTipoEjercicio(String idTE) {
         TipoEjercicioVO tejVO = null;
         try {
@@ -190,9 +193,5 @@ public class TipoEjercicioDAO extends ConexionBd implements Crud {
         }
         return tejVO;
     }
-    
-    
-    
-    
-    
+
 }

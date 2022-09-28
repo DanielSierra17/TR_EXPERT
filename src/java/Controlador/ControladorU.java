@@ -22,17 +22,17 @@ import javax.servlet.http.HttpSession;
  *
  * @author DANIEL SIERRA
  */
-@WebServlet(name = "ControladorUsuario", urlPatterns = {"/Usuario"})
+@WebServlet(name = "ControladorUsuario", urlPatterns = { "/Usuario" })
 public class ControladorU extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
      *
-     * @param request servlet request
+     * @param request  servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
+     * @throws IOException      if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -57,7 +57,8 @@ public class ControladorU extends HttpServlet {
         String contraseña = request.getParameter("txtContrasena");
         int opcion = Integer.parseInt(request.getParameter("opcion"));
 
-        UsuarioVO usuVO = new UsuarioVO(idUsuario, numDoc, tipoDoc, nombre, apellido, fechaNacimiento, edad, direccion, telefono, correo, TS, EPS, alergia, estado, sexo, rol, contraseña);
+        UsuarioVO usuVO = new UsuarioVO(idUsuario, numDoc, tipoDoc, nombre, apellido, fechaNacimiento, edad, direccion,
+                telefono, correo, TS, EPS, alergia, estado, sexo, rol, contraseña);
 
         UsuarioDAO usuDAO = new UsuarioDAO(usuVO);
 
@@ -109,7 +110,8 @@ public class ControladorU extends HttpServlet {
             case 5: {
                 if (usuDAO.iniciarSesion(correo, contraseña)) {
                     HttpSession misesion = request.getSession(true);
-                    usuVO = new UsuarioVO(idUsuario, numDoc, tipoDoc, nombre, apellido, fechaNacimiento, edad, direccion, telefono, correo, TS, EPS, alergia, estado, sexo, rol, contraseña);
+                    usuVO = new UsuarioVO(idUsuario, numDoc, tipoDoc, nombre, apellido, fechaNacimiento, edad,
+                            direccion, telefono, correo, TS, EPS, alergia, estado, sexo, rol, contraseña);
 
                     RolDAO rolDAO = new RolDAO();
                     RolVO rolVO = new RolVO();
@@ -136,20 +138,21 @@ public class ControladorU extends HttpServlet {
                     request.getRequestDispatcher("login.jsp").forward(request, response);
                 }
             }
-            break;
+                break;
 
         }
 
     }
 
-// <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the
+    // + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
      *
-     * @param request servlet request
+     * @param request  servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
+     * @throws IOException      if an I/O error occurs
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -160,10 +163,10 @@ public class ControladorU extends HttpServlet {
     /**
      * Handles the HTTP <code>POST</code> method.
      *
-     * @param request servlet request
+     * @param request  servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
+     * @throws IOException      if an I/O error occurs
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

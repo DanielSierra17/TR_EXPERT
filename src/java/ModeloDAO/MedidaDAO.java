@@ -28,7 +28,10 @@ public class MedidaDAO extends ConexionBd implements Crud {
     private boolean operacion = false;
     private String sql;
 
-    private String idMedida = "", codigoFK = "", valorI = "", valorF = "";
+    private String idMedida = "";
+    private String codigoFK = "";
+    private String valorI = "";
+    private String valorF = "";
 
     public MedidaDAO() {
     }

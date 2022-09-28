@@ -38,10 +38,10 @@ function addItemCarrito(newItem) {
 
 function renderCarrito() {
   tbody.innerHTML = "";
-  carrito.map(item => {
+  carrito.map((item) => {
     const tr = document.createElement("tr");
     tr.classList.add("ItemCarrito");
-    const Content = `
+    const Content = `;
     
     <th scope="row">1</th>
             <td class="table__productos">
