@@ -18,16 +18,16 @@ const validarFormulario = (e) => {
 		case "password":
 			validarCampo(expresiones.password, e.target, 'password');
 			validarPassword2();
-		break;
+			break;
 		case "correo":
 			validarCampo(expresiones.correo, e.target, 'correo');
-		break;
-		
+			break;
+
 	}
 }
 
 const validarCampo = (expresion, input, campo) => {
-	if(expresion.test(input.value)){
+	if (expresion.test(input.value)) {
 		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
 		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
 		document.querySelector(`#grupo__${campo} i`).classList.add('fa-check-circle');
@@ -45,10 +45,10 @@ const validarCampo = (expresion, input, campo) => {
 }
 
 const validarPassword2 = () => {
-	const inputPassword1 = document.getElementById('password');
-	const inputPassword2 = document.getElementById('password2');
+	const inputPassword1 = document.getElementById("password");
+	const inputPassword2 = document.getElementById("password2");
 
-	if(inputPassword1.value !== inputPassword2.value){
+	if (inputPassword1.value !== inputPassword2.value) {
 		document.getElementById(`grupo__password2`).classList.add('formulario__grupo-incorrecto');
 		document.getElementById(`grupo__password2`).classList.remove('formulario__grupo-correcto');
 		document.querySelector(`#grupo__password2 i`).classList.add('fa-times-circle');
@@ -73,8 +73,8 @@ inputs.forEach((input) => {
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
-	const terminos = document.getElementById('terminos');
-	if(campos.usuario && campos.nombre && campos.password && campos.correo && campos.telefono && terminos.checked ){
+	const terminos = document.getElementById("terminos");
+	if (campos.usuario && campos.nombre && campos.password && campos.correo && campos.telefono && terminos.checked) {
 		formulario.reset();
 
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');

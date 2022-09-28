@@ -16,8 +16,6 @@
 
 </head>
 <body>
-    
-<!-- header section starts      -->
 
 <header class="header">
 
@@ -35,10 +33,6 @@
     </nav>
 
 </header>
-
-<!-- header section ends     -->
-
-<!-- home section starts  -->
 
 <section class="home" id="home">
 
@@ -78,10 +72,6 @@
 
 </section>
 
-<!-- home section ends -->
-
-<!-- about section starts  -->
-
 <section class="about" id="about">
 
     <div class="image">
@@ -114,10 +104,6 @@
     </div>
 
 </section>
-
-<!-- about section ends -->
-
-<!-- features section starts  -->
 
 <section class="features" id="features">
 
@@ -165,10 +151,6 @@
 
 </section>
 
-<!-- features section ends -->
-
-<!-- pricing section starts  -->
-
 <section class="pricing" id="pricing">
 
     <div class="information">
@@ -209,10 +191,6 @@
     </div>
 
 </section>
-
-<!-- pricing section ends -->
-
-<!-- trainers section starts  -->
 
 <section class="trainers" id="trainers">
 
@@ -280,10 +258,6 @@
 
 </section>
 
-<!-- trainers section ends -->
-
-<!-- banner section starts  -->
-
 <section class="banner">
 
     <span>join us now</span>
@@ -292,10 +266,6 @@
     <a href="#" class="btn">get discount</a>
 
 </section>
-
-<!-- banner section ends -->
-
-<!-- review section starts  -->
 
 <section class="review">
 
@@ -363,10 +333,6 @@
     </div>
 
 </section>
-
-<!-- review section ends -->
-
-<!-- blogs section starts  -->
 
 <section class="blogs" id="blogs">
 
@@ -444,10 +410,6 @@
 
 </section>
 
-<!-- blogs section ends -->
-
-<!-- footer section starts  -->
-
 <section class="footer">
 
     <div class="box-container">
@@ -502,23 +464,7 @@
 
 <div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div>
 
-<!-- footer section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-<!-- custom js file link  -->
 <script src="js/script.js"></script>
 
 </body>

@@ -16,7 +16,11 @@ public class ConexionBd {
     
     //1. Declarar variablesy/u objetos
     
-    private String driver, user, password, dataBase, urlBd;
+    private String driver;
+    private String user; 
+    private String password;
+    private String dataBase; 
+    private String urlBd;
     private Connection conexion;
     
     public ConexionBd() {

@@ -682,13 +682,10 @@ section {
   padding-left: 25px;
 }
 
-
-
-
 .home .slide {
   min-height: 70vh;
-  background-size: cover !important;
-  background-position: center !important;
+  background-size: cover;
+  background-position: center;
   padding: 2rem 9%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1046,9 +1043,6 @@ section {
   padding-left: 4%;
 
 }
-
-
-
 
 .banner {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../images/banner-bg.jpg) no-repeat;
