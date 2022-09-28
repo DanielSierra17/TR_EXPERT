@@ -37,9 +37,6 @@ public class EntrenadorDAO extends ConexionBd implements Crud {
 
         try {
             conexion = this.obtenerConexion();
-            
-            /*idEntrenador = entrenadorVO.getIdEntrenador();
-            numDoc = entrenadorVO.getNumDoc();*/
             area = entrenadorVO.getArea();
 
         } catch (Exception e) {
@@ -54,8 +51,6 @@ public class EntrenadorDAO extends ConexionBd implements Crud {
         try {
             sql = "INSERT INTO Entrenador (area) VALUES (?)";
             puente = conexion.prepareStatement(sql);
-            /*puente.setString(1, idEntrenador);
-            puente.setString(2, numDoc);*/
             puente.setString(1, area);
             
             
@@ -80,8 +75,6 @@ public class EntrenadorDAO extends ConexionBd implements Crud {
         try {
             sql = "UPDATE usuario SET observacion = ? WHERE numDoc = ?";
             puente = conexion.prepareStatement(sql);
-            /*puente.setString(1, idEntrenador);
-            puente.setString(2, numDoc);*/
             puente.setString(1, area);
 
             
