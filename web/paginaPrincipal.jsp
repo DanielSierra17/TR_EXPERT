@@ -84,19 +84,19 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quia accusamus dicta inventore nobis obcaecati vero odio, id dolorum. Consequatur ex, aperiam deserunt nostrum perferendis illum unde ipsa? Consequatur, distinctio?</p>
         <div class="box-container">
             <div class="box">
-                <h3><i class="fas fa-check"></i>body and mind</h3>
+                
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
             </div>
             <div class="box">
-                <h3><i class="fas fa-check"></i>healthy life</h3>
+                
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
             </div>
             <div class="box">
-                <h3><i class="fas fa-check"></i>strategies</h3>
+                
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
             </div>
             <div class="box">
-                <h3><i class="fas fa-check"></i>workout</h3>
+                
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
             </div>
         </div>
@@ -157,10 +157,7 @@
         <span>pricing plan</span>
         <h3>affordable pricing plan for your</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolore excepturi ea suscipit fugiat cum quae, rerum optio mollitia! Tempora?</p>
-        <p> <i class="fas fa-check"></i> cardio exercise </p>
-        <p> <i class="fas fa-check"></i> weight lifting </p>
-        <p> <i class="fas fa-check"></i> diet plans </p>
-        <p> <i class="fas fa-check"></i> overall results </p>
+
         <a href="#" class="btn">all pricing</a>
     </div>
 
@@ -168,11 +165,7 @@
         <h3>basic plan</h3>
         <div class="price"><span>$</span>30<span>/mo</span></div>
        <div class="list">
-        <p> <i class="fas fa-check"></i> personal training </p>
-        <p> <i class="fas fa-check"></i> cardio exercise </p>
-        <p> <i class="fas fa-check"></i> weight lifting </p>
-        <p> <i class="fas fa-check"></i> diet plans </p>
-        <p> <i class="fas fa-check"></i> overall results </p>
+
        </div>
        <a href="#" class="btn">get started</a>
     </div>
@@ -181,11 +174,7 @@
         <h3>premium plan</h3>
         <div class="price"><span>$</span>90<span>/mo</span></div>
        <div class="list">
-        <p> <i class="fas fa-check"></i> personal training </p>
-        <p> <i class="fas fa-check"></i> cardio exercise </p>
-        <p> <i class="fas fa-check"></i> weight lifting </p>
-        <p> <i class="fas fa-check"></i> diet plans </p>
-        <p> <i class="fas fa-check"></i> overall results </p>
+
        </div>
        <a href="#" class="btn">get started</a>
     </div>
@@ -426,20 +415,10 @@
 
         <div class="box">
             <h3>opening hours</h3>
-            <p> monday : <i> 7:00am - 10:30pm </i> </p>
-            <p> tuesday : <i> 7:00am - 10:30pm </i> </p>
-            <p> wednesday : <i> 7:00am - 10:30pm </i> </p>
-            <p> friday : <i> 7:00am - 10:30pm </i> </p>
-            <p> saturday : <i> 7:00am - 10:30pm </i> </p>
-            <p> sunday : <i> closed </i> </p>
         </div>
 
         <div class="box">
             <h3>opening hours</h3>
-            <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
-            <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
-            <p> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </p>
-            <p> <i class="fas fa-map"></i> mumbai, india - 400104 </p>
             <div class="share">
                 <a href="#" class="fab fa-facebook-f"></a>
                 <a href="#" class="fab fa-youtube"></a>
